@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      @keyframes dotboxani {
+        from {
+          transform: (0);
+        }
+        to {
+          transform: rotate(1turn);
+        }
+      }
+
+      @keyframes lineboxani {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      body {
+        background-color: black;
+      }
+
+      #flexbox {
+        margin: auto;
+        background-color: aquamarine;
+        height: 500px;
+        width: 500px;
+        margin-top: 100px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #dotbox {
+        height: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        animation: dotboxani 2.5s ease-in-out infinite;
+      }
+
+      #linebox {
+        height: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: black;
+        margin: 30px;
+      }
+
+      .line {
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        margin: 15px;
+      }
+
+      #line1 {
+        animation: lineboxani 1s ease-in-out infinite;
+      }
+      #line2 {
+        animation: lineboxani 1s ease-in-out infinite;
+        animation-delay: 0.1s;
+      }
+      #line3 {
+        animation: lineboxani 1s ease-in-out infinite;
+        animation-delay: 0.2s;
+      }
+      #line4 {
+        animation: lineboxani 1s ease-in-out infinite;
+        animation-delay: 0.3s;
+      }
+      #line5 {
+        animation: lineboxani 1s ease-in-out infinite;
+        animation-delay: 0.4s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="flexbox">
+      <div id="dotbox">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div id="linebox">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+        <div class="line" id="line4"></div>
+        <div class="line" id="line5"></div>
+      </div>
+    </div>
+  </body>
+</html>
