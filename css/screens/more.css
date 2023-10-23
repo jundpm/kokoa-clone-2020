@@ -39,3 +39,11 @@
     font-size: 32px;
     color: white;
 }
+
+.google{
+    background-color: green;
+}
+
+.logout{
+    background-color: red;
+}
