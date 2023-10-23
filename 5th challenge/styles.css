@@ -13,10 +13,11 @@ body {
 
 .main-page{
     margin: 60px;
-    height: 80vh;
-    width: 45vh;
+    height: 800px;
+    width: 450px;
     background-color: white;
     border-radius: 50px;
+
 }
 
 
